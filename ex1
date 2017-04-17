@@ -1,0 +1,72 @@
+//encapsulation ------------------------------------
+public class encapsulation{
+  private int var1;  //data is hidden and can be only accessed by this class
+  private int var2;
+  
+  public encapsulation (int a, int b){
+ 		var1= a;
+ 		var2=b;
+    }
+    public void do_stuff(){
+    var1=var2+6;
+    
+    }
+}
+////inheritance --------------------------------------------------------------
+class dog{
+ string name;
+ 
+ public void action(){
+  System.out.println(name+"goes 'Bark!'");
+  }
+ }
+ 
+ public class terrier extends dog {
+ 
+   public void name_the_dog(string input){
+      name = input;
+      System.out.println("Terrieer is called "+name);
+      }
+     
+      public static void main(String args[]) {
+      input = "Spot";
+      terrier Spot = new terrier();
+      Spot.name_the_dog(input);
+      Spot.action;
+      
+   }
+//---------polymorphism------------------
+
+public interface foo{}
+public class bar{}
+public class foo1 extends bar implements foo{}
+
+foo1 test = new foo1();
+bar a = test;
+foo b = test;
+
+
+/--------------abstraction-----------------------------------
+public abstract class test{
+  //some variables
+   public abstract int computeSomething(); 
+   /do stuff
+   
+}
+public class absTest extends test{
+
+    //some more variables
+    //some more methods
+    public void calculate(){
+    x = product of computeSomething +1
+    
+    }
+    
+public class runtime {
+  public static void main(String [] args) {
+  absTest a = new absTest
+  a.calculate();
+  }
+    }    
+    
+}
